@@ -20,11 +20,11 @@
     </style>
 </head>
 
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-slate-50 text-slate-900 pt-28">
 
     <!-- Navigation -->
     <nav
-        class="glass sticky top-8 z-40 mx-4 mt-4 px-6 py-4 rounded-2xl border border-white/20 shadow-lg flex justify-between items-center">
+        class="glass fixed top-6 left-4 right-4 z-50 px-6 py-4 rounded-2xl border border-white/20 shadow-lg flex justify-between items-center">
         <div class="flex items-center gap-2">
             <div
                 class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center text-white font-bold text-xl">

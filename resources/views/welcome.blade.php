@@ -73,6 +73,7 @@
         @endforeach
    </div>
     </div>
+
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         @foreach($events as $event)
         <div
@@ -104,4 +105,27 @@
         @endforeach
 
         
+    </section>
+
+    <section class="mt-16 bg-white rounded-[2.5rem] border border-slate-100 shadow-sm p-8">
+        <div class="mb-8 flex flex-col md:flex-row justify-between gap-4 items-start md:items-center">
+            <div>
+                <h2 class="text-3xl font-extrabold mb-2">Partner Terpercaya</h2>
+                <p class="text-slate-500 font-medium">Partner yang mendukung platform AmikomEventHub untuk menghadirkan pengalaman event terbaik.</p>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            @if($partners->isEmpty())
+            <div class="col-span-full text-center text-slate-500 py-10">Partner belum tersedia.</div>
+            @else
+            @foreach($partners as $partner)
+            <div class="flex flex-col items-center gap-4 p-6 bg-slate-50 rounded-3xl text-center">
+                <img src="{{ $partner->logo_url }}" alt="Logo {{ $partner->name }}" class="w-24 h-24 rounded-3xl object-cover shadow-sm">
+                <div>
+                    <p class="font-bold text-slate-800">{{ $partner->name }}</p>
+                </div>
+            </div>
+            @endforeach
+            @endif
+        </div>
     </section>
